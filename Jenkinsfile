@@ -24,7 +24,7 @@ pipeline {
            stage('chatbot execution') {
                steps {
 		   bat 'cd C:\\ProgramData\\Jenkins\\.jenkins\\workspace'
-                   bat 'python3 chatbot.py %JOB_NAME% %BUILD_USER% %BUILD_NUMBER% %BUILD_USER_EMAIL%'
+                   bat 'python chatbot.py %JOB_NAME% %BUILD_USER% %BUILD_NUMBER% %BUILD_USER_EMAIL%'
                }
            }
        }
